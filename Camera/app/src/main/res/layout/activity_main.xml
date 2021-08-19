@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/While"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/Rel"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/text3"
+        android:layout_marginTop="231dp"
+        android:background="@color/colorAccent"></RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="ĐỒ ÁN LẬP TRÌNH MẠNG"
+        android:textColor="#000000"
+        android:textSize="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_centerInParent="true"
+        android:text="Nguyễn Bá Thành"
+        android:textColor="#000000"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_centerInParent="true"
+        android:text="102170055"
+        android:textColor="#000000"
+        android:textSize="20dp"></TextView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menunotton"
+        tools:ignore="InvalidId,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</RelativeLayout>
